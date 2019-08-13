@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import StoreLocator from '../StoreLocator';
+import Button from '../Button';
 
 it('renders without crashing', () => {
-  let mountedStoreLocator = shallow(<StoreLocator />);
+  let mountedButton = shallow(<Button />);
 });
