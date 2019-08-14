@@ -20,4 +20,13 @@ describe("Map",function(){
   });
 
 
+  it('Displays none map when no param is given',function(){
+    // const defaultMap = mountedMap.find('img [src="images/none.png"]');
+    const noneImage = "images/none.png";
+    expect(mountedMap.find("img").prop("src")).toEqual(noneImage);
+
+    // expect(defaultMap.length).toBe(1);
+  })
+
+
 });
