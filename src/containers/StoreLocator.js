@@ -4,13 +4,14 @@ import Button from '../components/Button';
 import Map from '../components/Map';
 
 class StoreLocator extends Component {
-  render(){
-    return(
+  render() {
+    return (
+
       <div>
         <Header />
         <div>
           <Button location='portland' />
-          <Button location='Astoria'/>
+          <Button location='Astoria' />
           <Button />
         </div>
         <Map />

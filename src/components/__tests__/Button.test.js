@@ -49,6 +49,6 @@ describe('When a value is not passwed display all location',function(){
 
   it('displays the location',()=>{
     const locName = mountedButton.find('.location-button');
-    expect(locName.text()).toEqual('All location');
+    expect(locName.text()).toEqual('All locations');
   });
 });
