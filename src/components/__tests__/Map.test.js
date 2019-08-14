@@ -11,7 +11,7 @@ describe("Map",function(){
   });
 
   it('renders without crashing', () => {
-    let mountedMap = shallow(<Map />);
+    shallow(<Map />);
   });
 
   it('contains map image',()=>{
