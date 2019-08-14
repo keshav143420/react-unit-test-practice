@@ -14,9 +14,9 @@ describe('Header',function(){
   });
 
   it('render a logo',()=>{
-    // const logoImg = mountedHeader.find('img [src="images/wired-brain-coffee-logo.png"]');
-    const logoImg = mountedHeader.find('img');
-    expect(logoImg.length).toBe(1);
+    const logoImg = mountedHeader.find("img");
+    const logoImageName = "images/wired-brain-coffee-logo.png";
+    expect(logoImg.prop("src")).toEqual(logoImageName);
   });
 
 });
