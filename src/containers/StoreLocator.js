@@ -6,6 +6,9 @@ import Map from '../components/Map';
 class StoreLocator extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      currentMap: 'none.png'
+    }
     this.shops = [
       {
         'location': 'Portland',
@@ -34,7 +37,7 @@ class StoreLocator extends Component {
         <div>
           {storeButtons}
         </div>
-        <Map />
+        <Map imagename={this.state.currentMap} location={this.props.location}/>
       </div>
     );
   }
