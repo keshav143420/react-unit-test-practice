@@ -4,7 +4,7 @@ import App from '../App';
 
 describe("App",function(){
   it('renders without crashing', () => {
-    let mountedApp = shallow(<App />);
+    shallow(<App />);
   });
 
   it('renders without crashing for Store locator', () => {
