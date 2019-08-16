@@ -9,7 +9,7 @@ describe("Button",function(){
   });
 
   it('renders without crashing', () => {
-    let mountedButton = shallow(<Button />);
+    shallow(<Button />);
   });
 
   it('renders a button', () => {
