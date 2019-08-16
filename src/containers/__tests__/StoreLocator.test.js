@@ -1,7 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import StoreLocator from '../StoreLocator';
-import { exportAllDeclaration } from '@babel/types';
 
 describe("StoreLocator",function(){
   let mountedStoreLocator;
@@ -10,7 +9,7 @@ describe("StoreLocator",function(){
   })
   
   it('renders without crashing', () => {
-    let mountedStoreLocator = shallow(<StoreLocator />);
+    shallow(<StoreLocator />);
   });
 
   it('renders a header', () => {
