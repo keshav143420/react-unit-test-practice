@@ -15,9 +15,14 @@ describe("Button",function(){
   it('renders a button', () => {
     const button = mountedButton.find('button');
     expect(button.length).toBe(1);
-    
-
   });
+
+  it('call a function passed to it when clicked', () => {
+    const mockCallback = jest.fn();
+    const mountedButtonWithCallback = shallow(<Button handleClick={mockCallback} />);
+    mountedButtonWithCallback.find('button').simulate('click');
+    expect(mockCallback.mock.calls.length).toEqual(1);
+  })
 
 });
 
