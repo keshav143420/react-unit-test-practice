@@ -9,16 +9,16 @@ let mockResponse = {
       }
     ]
   }
-}
+};
 
 axiosMock.get.mockImplementation(req);
 
 function req() {
   return new Promise(function (resolve) {
-    axiosMock.delayTimer = setTimeout(function(){
+    axiosMock.delayTimer = setTimeout(function () {
       resolve(mockResponse);
-    },1000);
-  })
+    }, 100);
+  });
 }
 
 module.exports = axiosMock;
