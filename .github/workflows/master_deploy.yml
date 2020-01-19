@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [10.x, 12.x]
+        node-version: [12.x]
     steps:
       - uses: actions/checkout@v1
       - name: Use Node.js ${{ matrix.node-version }}
@@ -18,6 +18,8 @@ jobs:
       - name: Install Packages
         run: npm install
       - name: Deploy to GH Pages
-        run: npm run deploy
-      - name: Updating Domain
-        run: echo "Update domain"
+        run: |
+          git config user.email "keshav143420@gmail.com"
+          git config user.name "keshava kotri"
+          git remote set-url origin https://aa227e9cc2021347bd64c9250da588ccb038d28e@github.com/keshav143420/react-unit-test-practice.git
+          npm run deploy
