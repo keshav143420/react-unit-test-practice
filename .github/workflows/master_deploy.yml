@@ -13,9 +13,6 @@ jobs:
       - uses: actions/checkout@v1
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REPO_OWNER: keshav143420
         with:
           node-version: ${{ matrix.node-version }}
       - name: Install Packages
@@ -24,5 +21,5 @@ jobs:
         run: |
           git config user.email "keshav143420@gmail.com"
           git config user.name "keshava kotri"
-          git remote set-url origin https://github.com/keshav143420/react-unit-test-practice.git
+          git remote set-url origin https://keshav143420:c3130c2f162f32aa2b55217698a1fb6cc0a9bfa7@github.com/keshav143420/react-unit-test-practice.git
           npm run deploy
