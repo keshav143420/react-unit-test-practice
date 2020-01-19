@@ -21,5 +21,5 @@ jobs:
         run: |
           git config user.email "keshav143420@gmail.com"
           git config user.name "keshava kotri"
-          git remote set-url origin https://aa227e9cc2021347bd64c9250da588ccb038d28e@github.com/keshav143420/react-unit-test-practice.git
+          git remote set-url origin https://8df86399c86182787495c04f521d412c2c9d4138@github.com/keshav143420/react-unit-test-practice.git
           npm run deploy
