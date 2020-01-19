@@ -3,7 +3,6 @@ import Header from '../components/Header';
 import Button from '../components/Button';
 import Map from '../components/Map';
 import mapChooser from '../mapChooser';
-import axios from 'axios';
 
 class StoreLocator extends Component {
   constructor(props) {
@@ -15,10 +14,26 @@ class StoreLocator extends Component {
     this.chooseMap = this.chooseMap.bind(this);
   }
 
-  async componentDidMount() {
-    let response = await axios.get('./data/shops.json');
+  componentDidMount() {
     this.setState({
-      shops: response.data.shops
+      shops: [
+        {
+          "location": "Portland",
+          "address": "123 Portland Dr."
+        },
+        {
+          "location": "Astoria",
+          "address": "123 Astoria Dr."
+        },
+        {
+          "location": "Corvalis",
+          "address": "123 Corvalis Dr."
+        },
+        {
+          "location": "",
+          "address": ""
+        }
+      ]
     })
   }
 
