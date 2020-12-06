@@ -1,11 +1,7 @@
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/keshav143420/react-unit-test-practice)
 
 
-# Build report
-
-[![Build status: Linux](https://img.shields.io/travis/keshav143420/react-unit-test-practice.svg?style=flat-square)](https://travis-ci.org/keshav143420/react-unit-test-practice)
-
-
+# App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
