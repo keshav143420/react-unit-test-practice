@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import Button from '../components/Button';
 import Map from '../components/Map';
 import mapChooser from '../mapChooser';
+import Calculator from '../calculator/Calculator'; // Import the Calculator
 
 class StoreLocator extends Component {
   constructor(props) {
@@ -53,6 +54,9 @@ class StoreLocator extends Component {
         {storeButtons}
       </div>
       <Map imagename={this.state.currentMap} location={this.props.location} />
+      <hr /> {/* Optional: Add a separator */}
+      <h2>Basic Calculator</h2>
+      <Calculator /> {/* Render the Calculator */}
     </div>
     );
   }
